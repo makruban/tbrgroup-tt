@@ -80,7 +80,6 @@ class _GetStartedScreenState extends State<GetStartedScreen> {
                   keyboardType: TextInputType.phone,
                   // maxLength: 10,
                   inputFormatters: [
-
                     NumberInputFormatter(),
                   ],
                   onChanged: _onChanged,
@@ -93,7 +92,7 @@ class _GetStartedScreenState extends State<GetStartedScreen> {
       ),
       floatingActionButton: FloatingActionWidget(
         isDisabled: _isDisabled,
-        showDialog2: _showAlertDialog,
+        showDialog: _showAlertDialog,
       ),
     );
   }
