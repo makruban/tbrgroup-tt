@@ -3,7 +3,7 @@ import 'package:tbrgroup_tt/constants.dart';
 
 class FloatingActionWidget extends StatelessWidget {
 
-  bool isDisabled;
+  final bool isDisabled;
   final Function showDialog;
 
   FloatingActionWidget({required this.isDisabled, required this.showDialog});

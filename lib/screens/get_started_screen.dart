@@ -22,6 +22,9 @@ class _GetStartedScreenState extends State<GetStartedScreen> {
   }
 
   void _onChanged(String text) {
+    if(text.isEmpty){
+      _clearController();
+    }
     if (text.length == 2) {
       setState(() {
         _visibleDelete = true;
